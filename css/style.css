@@ -8,9 +8,18 @@
     }
 }
 
+/*========= Header section ===========*/
+
+.site-header {
+    padding: 20px 24px;
+    margin: 0 auto;
+    background-color: #F5F1E8;
+}
 
 .site-logo {
     width: 175px;
+    max-width: 100%;
+    height: auto;
 }
 
 .desktop-navigation{
@@ -39,4 +48,18 @@
 
 .desktop-navigation > a:active {
     color: #7F020D;
+}
+
+
+
+/* =========== Hero Section ==============*/
+
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.hero-figure img{
+    width: 500px;
 }
