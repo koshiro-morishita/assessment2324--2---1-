@@ -35,7 +35,7 @@ img {
 /*========= Header section ===========*/
 
 .site-header {
-    padding: 20px 300px;
+    padding: 20px 30px;
     margin: 0 auto;
     background-color: #F5F1E8;
     width: 100%;
@@ -303,6 +303,80 @@ img {
 .copyright {
     grid-column: 1 / 4;
     text-align: center;
+}
+
+
+
+
+
+
+
+
+/*======= Detail Page 1 ============*/
+
+/*======= DetailPage1 Hero ============*/
+
+
+.detail1-hero {
+    position: relative;
+    height: 550px;
+
+}
+
+.detail1-hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.detail1-hero-text {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: white;
+    padding: 10px, 10px, 10px;
+    max-width: 400px;
+}
+
+/*======= DetailPage1 History ============*/
+
+
+.history-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 4rem;
+    padding: 60px 80px;
+    background-color: #F5F1E8;
+}
+
+.history-section-title {
+    justify-self: end;
+    width: 100%;
+    max-width: 500px;
+}
+
+.history-section-figure{
+    justify-self: start;
+    width: 100%;
+    max-width: 400px;
+}
+
+.history-section-figure img {
+    width: 100%;
+    height: auto;
+}
+
+/*======= DetailPage1 Types and Usage ============*/
+
+
+.types-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 4rem;
 }
 
 
