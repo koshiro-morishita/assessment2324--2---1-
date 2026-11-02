@@ -371,13 +371,49 @@ img {
 
 /*======= DetailPage1 Types and Usage ============*/
 
+.types-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 4rem;
+    padding: 60px 80px;
+    background-color: #F5F1E8;
+}
 
 .types-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
     gap: 4rem;
+    
 }
+
+.types-figure {
+    max-width: 450px;
+}
+
+.types-figure img {
+    width: 100%;
+    height: auto;
+}
+
+
+/*======= DetailPage1 CTA section ============*/
+
+.CTA-section{
+    background-color: #F5F1E8;
+    display: flexbox;
+
+}
+
+.CTA-section.CTA-button{
+    
+}
+
+
+
+
+
 
 
 
