@@ -256,6 +256,43 @@ img {
 }
 
 
+/*======== Footer =========*/
+
+.site-footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    padding: 40px 80px;
+    background-color: #402712;
+    color: white;
+}
+
+.footer-brand img {
+    width: 180px;
+    height: auto;
+}
+
+.footer-brand p {
+    max-width: 250px;
+    font-size: small;
+}
+
+.footer-navigation ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-navigation a {
+    color: white;
+    text-decoration: none;
+}
+
+.copyright {
+    grid-column: 1 / 4;
+    text-align: center;
+}
+
+
 
 
 
