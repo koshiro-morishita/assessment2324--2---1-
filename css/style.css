@@ -377,7 +377,7 @@ img {
     align-items: center;
     gap: 4rem;
     padding: 60px 80px;
-    background-color: #F5F1E8;
+    background-color: white;
 }
 
 .types-content {
@@ -402,12 +402,14 @@ img {
 
 .CTA-section{
     background-color: #F5F1E8;
-    display: flexbox;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
 
 }
 
-.CTA-section.CTA-button{
-    
+.CTA-section .CTA-button{
+
 }
 
 
