@@ -490,6 +490,34 @@ td span {
 }
 
 
+/*======= DetailPage3============*/
+
+
+/*======= DetailPage3 Hero ============*/
+
+.detail3-hero {
+    position: relative;
+    height: 550px;
+    display: flex;
+}
+
+.detail3-hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.detail3-hero-text {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: white;
+    padding: 10px, 10px, 10px;
+    max-width: 400px;
+}
+
 
 
 
