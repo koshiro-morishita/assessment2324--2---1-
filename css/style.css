@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Sedan&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Sedan&family=Yuji+Syuku&display=swap');
 
 h1{
     font-family: "Cormorant Garamond", serif;
@@ -545,10 +545,26 @@ td span {
 }
 
 .kanji-character {
+    font-family: "Yuji Syuku", serif;
     font-size: 80px;
     text-align: center;
 }
 
+/*======= DetailPage3 same-meaning-section ============*/
+
+
+.same-sound-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+    padding: 60px 80px;
+}
+
+.name-example {
+    background-color: #F5F1E8;
+    padding: 30px;
+}
 
 
 
