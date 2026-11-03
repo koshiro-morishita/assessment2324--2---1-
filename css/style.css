@@ -414,6 +414,81 @@ img {
 
 
 
+/*======= DetailPage2============*/
+
+
+/*======= DetailPage2 Hero ============*/
+
+.detail2-hero {
+    position: relative;
+    height: 550px;
+    display: flex;
+}
+
+.detail2-hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.detail2-hero-text {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: white;
+    padding: 10px, 10px, 10px;
+    max-width: 400px;
+}
+
+
+/*======= DetailPage2 Cards ============*/
+
+.writing-systems-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    padding: 60px 80px;
+}
+
+.writing-card {
+    background-color: #F5F1E8;
+    padding: 30px;
+    text-align: center;
+}
+
+.writing-card img {
+    width: 180px;
+    height: 120px;
+    object-fit: contain;
+    margin: 0 auto;
+}
+
+/*======= DetailPage2 Comparison ============*/
+
+.comparison-section {
+    padding: 60px 80px;
+}
+
+.comparison-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+td span {
+    display: block;
+}
+
+.comparison-figure img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    
+}
+
 
 
 
