@@ -566,6 +566,87 @@ td span {
     padding: 30px;
 }
 
+/*======= DetailPage4============*/
+
+
+/*======= DetailPage4 Hero ============*/
+
+.yourname-hero{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    padding: 60px 80px;
+}
+
+.yourname-hero img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    max-width: 450px;
+}
+
+
+/*======= DetailPage4 Name examples ============*/
+
+
+
+.name-examples-section {
+    padding: 60px 80px;
+    background-color: #F5F1E8;
+}
+
+.name-examples-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+}
+
+.name-examples-table th,
+.name-examples-table td {
+    padding: 20px;
+    text-align: left;
+    border: 1px solid #cccccc;
+}
+
+.name-examples-table th {
+    background-color: #cccccc;
+}
+
+.name-examples-table th span {
+    display: block;
+    font-size: 0.8rem;
+}
+
+
+/*======= DetailPage4 A case ============*/
+
+.case-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 4rem;
+    padding: 60px 80px;
+    background-color: #402712;
+    color: white;
+}
+
+.case-text {
+    justify-self: end;
+    width: 100%;
+    max-width: 500px;
+}
+
+.case-figure {
+    justify-self: start;
+    width: 100%;
+    max-width: 450px;
+}
+
+.case-figure img {
+    width: 100%;
+    height: auto;
+}
+
 
 
 
