@@ -1,5 +1,55 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Sedan&family=Yuji+Syuku&display=swap');
 
+
+/* ============= common throughout the site =============*/
+
+.site-header,
+.site-footer {
+    padding-top: 20px;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-bottom: 30px;
+    box-sizing: border-box;
+}
+
+main > section{
+    padding-top: 80px;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-bottom: 80px;
+    box-sizing: border-box;
+}
+
+
+.CTA-section{
+    background-color: #F5F1E8;
+    display: flex;
+    justify-content: center;
+    padding-top: 90px;
+    padding-bottom: 90px;
+
+}
+
+.CTA-button{
+    display: inline-block;
+    padding: 12px 32px;
+    border: 1px solid #A60311;
+    background-color: #A60311;
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.CTA-button:hover{
+    background-color: #7F020D;
+    border-color: #7F020D;
+}
+
+
+
+
+
+
 h1{
     font-family: "Cormorant Garamond", serif;
     font-size: 80px;
@@ -35,7 +85,6 @@ img {
 /*========= Header section ===========*/
 
 .site-header {
-    padding: 20px 30px;
     margin: 0 auto;
     background-color: #F5F1E8;
     width: 100%;
@@ -81,6 +130,56 @@ img {
 
 
 
+/*======== Footer =========*/
+
+.site-footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    background-color: #402712;
+    color: white;
+}
+
+.footer-brand img {
+    width: 180px;
+    height: auto;
+}
+
+.footer-brand p {
+    max-width: 250px;
+    font-size: small;
+}
+
+.footer-navigation ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-navigation a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-navigation a:hover {
+    text-decoration: underline;
+}
+
+.footer-contact a {
+    color: white;
+    text-decoration: underline;
+}
+
+.copyright {
+    grid-column: 1 / 4;
+    text-align: center;
+}
+
+
+
+
+
+
+
 /* =========== HP Hero Section ==============*/
 
 .hero {
@@ -117,20 +216,7 @@ img {
 
 }
 
-.CTA-button{
-    display: inline-block;
-    padding: 12px 32px;
-    border: 1px solid #A60311;
-    background-color: #A60311;
-    color: white;
-    text-decoration: none;
-    font-size: 30px;
-}
 
-.CTA-button:hover{
-    background-color: #7F020D;
-    border-color: #7F020D;
-}
 
 
 /*  ===========HP First Section============*/
@@ -228,8 +314,12 @@ img {
     height: auto;
 }
 
+
+/*  ===========HP discover Section============*/
+
+
 .discover-section {
-    padding: 58px 24px 64px;
+    padding: 58px 200px 64px;
     text-align: center;
 }
 
@@ -257,52 +347,6 @@ img {
     height: 150px;
     object-fit: cover;
     border-radius: 50%;
-}
-
-
-/*======== Footer =========*/
-
-.site-footer {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 3rem;
-    padding: 40px 80px;
-    background-color: #402712;
-    color: white;
-}
-
-.footer-brand img {
-    width: 180px;
-    height: auto;
-}
-
-.footer-brand p {
-    max-width: 250px;
-    font-size: small;
-}
-
-.footer-navigation ul {
-    list-style: none;
-    padding: 0;
-}
-
-.footer-navigation a {
-    color: white;
-    text-decoration: none;
-}
-
-.footer-navigation a:hover {
-    text-decoration: underline;
-}
-
-.footer-contact a {
-    color: white;
-    text-decoration: underline;
-}
-
-.copyright {
-    grid-column: 1 / 4;
-    text-align: center;
 }
 
 
@@ -376,7 +420,6 @@ img {
     grid-template-columns: 1fr 1fr;
     align-items: center;
     gap: 4rem;
-    padding: 60px 80px;
     background-color: white;
 }
 
@@ -397,20 +440,6 @@ img {
     height: auto;
 }
 
-
-/*======= DetailPage1 CTA section ============*/
-
-.CTA-section{
-    background-color: #F5F1E8;
-    display: flex;
-    justify-content: center;
-    padding: 40px;
-
-}
-
-.CTA-section .CTA-button{
-
-}
 
 
 
@@ -449,7 +478,6 @@ img {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 3rem;
-    padding: 60px 80px;
 }
 
 .writing-card {
@@ -468,7 +496,6 @@ img {
 /*======= DetailPage2 Comparison ============*/
 
 .comparison-section {
-    padding: 60px 80px;
 }
 
 .comparison-content {
@@ -526,7 +553,6 @@ td span {
     grid-template-columns: 1fr 1fr;
     align-items: center;
     gap: 4rem;
-    padding: 60px 80px;
     background-color: #F5F1E8;
 }
 
@@ -558,7 +584,6 @@ td span {
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
     align-items: center;
-    padding: 60px 80px;
 }
 
 .name-example {
@@ -575,7 +600,6 @@ td span {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 3rem;
-    padding: 60px 80px;
 }
 
 .yourname-hero img{
@@ -589,10 +613,9 @@ td span {
 /*======= DetailPage4 Name examples ============*/
 
 
-
 .name-examples-section {
-    padding: 60px 80px;
     background-color: #F5F1E8;
+    padding-top: 20px;
 }
 
 .name-examples-table {
@@ -625,7 +648,6 @@ td span {
     grid-template-columns: 1fr 1fr;
     align-items: center;
     gap: 4rem;
-    padding: 60px 80px;
     background-color: #402712;
     color: white;
 }
