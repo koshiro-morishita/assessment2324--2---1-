@@ -20,6 +20,21 @@ main > section{
     box-sizing: border-box;
 }
 
+.hero-title,
+.detail1-hero-title,
+.detail2-hero-title,
+.detail3-hero-title,
+.detail4-hero-title,
+.contact-hero-title{
+    background-color: white;
+    max-width: 500px;
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+    
+}
+
 
 .CTA-section{
     background-color: #F5F1E8;
@@ -46,6 +61,7 @@ main > section{
 }
 
 
+/* ============= common fonts throughout the site =============*/
 
 
 
@@ -391,6 +407,7 @@ img {
 .detail1-hero {
     position: relative;
     height: 550px;
+    padding: 0%;
 
 }
 
@@ -400,15 +417,12 @@ img {
     object-fit: cover;
 }
 
-.detail1-hero-text {
+.detail1-hero-title {
     position: absolute;
     top: 50%;
-    left: 10%;
-    top: 50%;
+    left: 200px;
     transform: translateY(-50%);
     background-color: white;
-    padding: 10px, 10px, 10px;
-    max-width: 400px;
 }
 
 /*======= DetailPage1 History ============*/
@@ -478,7 +492,7 @@ img {
 .detail2-hero {
     position: relative;
     height: 550px;
-    display: flex;
+    padding: 0%;
 }
 
 .detail2-hero img {
@@ -487,16 +501,16 @@ img {
     object-fit: cover;
 }
 
-.detail2-hero-text {
+.detail2-hero-title {
     position: absolute;
     top: 50%;
-    left: 10%;
-    top: 50%;
+    left: 200%;
     transform: translateY(-50%);
     background-color: white;
-    padding: 10px, 10px, 10px;
     max-width: 400px;
 }
+
+
 
 
 /*======= DetailPage2 Cards ============*/
@@ -552,7 +566,7 @@ td span {
 .detail3-hero {
     position: relative;
     height: 550px;
-    display: flex;
+    padding: 0%;
 }
 
 .detail3-hero img {
@@ -561,14 +575,12 @@ td span {
     object-fit: cover;
 }
 
-.detail3-hero-text {
+.detail3-hero-title {
     position: absolute;
     top: 50%;
-    left: 10%;
-    top: 50%;
+    left: 200px;
     transform: translateY(-50%);
     background-color: white;
-    padding: 10px, 10px, 10px;
     max-width: 400px;
 }
 
@@ -623,13 +635,13 @@ td span {
 
 /*======= DetailPage4 Hero ============*/
 
-.yourname-hero{
+.detail4-hero{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 3rem;
 }
 
-.yourname-hero img{
+.detail4-hero img{
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -727,6 +739,23 @@ td span {
 
 
 /* =========== Contact Section =========== */
+
+
+.contact-hero{
+    position: relative;
+    height: 550px;
+    padding: 0%;
+}
+
+.contact-hero-title{
+    position: absolute;
+    top: 50%;
+    right: 200px;
+    transform: translateY(-50%);
+    background-color: white;
+    max-width: 400px;
+}
+
 
 .contact-section {
     display: grid;
