@@ -6,16 +6,16 @@
 .site-header,
 .site-footer {
     padding-top: 20px;
-    padding-left: 200px;
-    padding-right: 200px;
+    padding-left: 300px;
+    padding-right: 300px;
     padding-bottom: 30px;
     box-sizing: border-box;
 }
 
 main > section{
     padding-top: 80px;
-    padding-left: 200px;
-    padding-right: 200px;
+    padding-left: 300px;
+    padding-right: 300px;
     padding-bottom: 80px;
     box-sizing: border-box;
 }
@@ -27,11 +27,11 @@ main > section{
 .detail4-hero-title,
 .contact-hero-title{
     background-color: white;
-    max-width: 500px;
-    padding-top: 10px;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-bottom: 10px;
+    max-width: 600px;
+    padding-top: 0px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 5px;;
     
 }
 
@@ -423,7 +423,7 @@ img {
 .detail1-hero-title {
     position: absolute;
     top: 50%;
-    left: 200px;
+    left: 300px;
     transform: translateY(-50%);
     background-color: white;
 }
@@ -460,11 +460,11 @@ img {
 /*======= DetailPage1 Types and Usage ============*/
 
 .types-section {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    gap: 4rem;
     background-color: white;
+}
+
+.types-section > p {
+    max-width: 600px;
 }
 
 .types-content {
@@ -472,11 +472,27 @@ img {
     grid-template-columns: 1fr 1fr;
     align-items: center;
     gap: 4rem;
-    
+    margin-top: 30px;
 }
 
+.types-content table{
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1.2rem;
+}
+
+.types-content th,
+.types-content td{
+    border: 1px solid #402712;
+    padding: 16px;
+    text-align: left;
+}
+
+
 .types-figure {
-    max-width: 450px;
+    width: 100%;
+    max-width: 500px;
+    margin: 0;
 }
 
 .types-figure img {
@@ -510,7 +526,6 @@ img {
     left: 200%;
     transform: translateY(-50%);
     background-color: white;
-    max-width: 400px;
 }
 
 
@@ -540,24 +555,66 @@ img {
 /*======= DetailPage2 Comparison ============*/
 
 .comparison-section {
+    padding-top: 20px;
 }
+
+
 
 .comparison-content {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 2.1fr 0.9fr;
     gap: 4rem;
     align-items: center;
+}
+
+.comparison-content table{
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1.7rem;
+}
+
+.comparison-content th,
+.comparison-content td{
+    border: 1px solid #402712;
+    padding: 16px;
+    text-align: left;
 }
 
 td span {
     display: block;
 }
 
+.comparison-figure {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow: hidden;
+
+}
+
 .comparison-figure img {
     width: 100%;
-    height: 200px;
+    height: 120px;
     object-fit: cover;
-    
+}
+
+.img2-cropped {
+    height: 120px;
+    overflow: hidden;
+}
+
+.katakana-image {
+    transform: scale(1.3);
+    object-position: center 70%;
+}
+
+.img3-cropped {
+    height: 120px;
+    overflow: hidden;
+}
+
+.kanji-image{
+    transform: scale(1.1);
 }
 
 
@@ -581,10 +638,8 @@ td span {
 .detail3-hero-title {
     position: absolute;
     top: 50%;
-    left: 200px;
+    left: 300px;
     transform: translateY(-50%);
-    background-color: white;
-    max-width: 400px;
 }
 
 
@@ -633,8 +688,9 @@ td span {
     padding: 30px;
 }
 
-/*======= DetailPage4============*/
 
+
+/*======= DetailPage4============*/
 
 /*======= DetailPage4 Hero ============*/
 
@@ -642,6 +698,10 @@ td span {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 3rem;
+}
+
+.detail4-hero-title{
+    padding-left: 300px;
 }
 
 .detail4-hero img{
@@ -721,6 +781,7 @@ td span {
 .contact-hero {
     position: relative;
     height: 550px;
+    padding-right: 300px;
 }
 
 .contact-hero > img {
@@ -735,7 +796,6 @@ td span {
     right: 12%;
     transform: translateY(-50%);
     background-color: #F5F1E8;
-    padding: 50px 80px;
 }
 
 /*======= Contact Page contact section ============*/
