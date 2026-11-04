@@ -787,10 +787,11 @@ td span {
 
 /*======= Contact Page Hero ============*/
 
-.contact-hero {
+
+.contact-hero{
     position: relative;
     height: 550px;
-    padding-right: 300px;
+    padding: 0%;
 }
 
 .contact-hero > img {
@@ -802,7 +803,7 @@ td span {
 .contact-hero-title {
     position: absolute;
     top: 50%;
-    right: 12%;
+    right: 300px;
     transform: translateY(-50%);
     background-color: #F5F1E8;
 }
@@ -813,27 +814,11 @@ td span {
 /* =========== Contact Section =========== */
 
 
-.contact-hero{
-    position: relative;
-    height: 550px;
-    padding: 0%;
-}
-
-.contact-hero-title{
-    position: absolute;
-    top: 50%;
-    right: 200px;
-    transform: translateY(-50%);
-    background-color: white;
-    max-width: 400px;
-}
-
 
 .contact-section {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
-    padding: 60px 80px;
 }
 
 .contact-info {
@@ -855,7 +840,6 @@ td span {
 
 .contact-form-section {
     background-color: #F5F1E8;
-    padding: 40px;
 }
 
 .contact-form-section form {
@@ -874,7 +858,6 @@ td span {
 /* =========== Welcome Section =========== */
 
 .welcome-section {
-    padding: 60px 80px;
     text-align: center;
     background-color: #F5F1E8;
 }
