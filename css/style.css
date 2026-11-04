@@ -32,7 +32,7 @@ main > section{
     padding-left: 25px;
     padding-right: 25px;
     padding-bottom: 5px;;
-    
+    text-align: center;
 }
 
 
@@ -523,9 +523,12 @@ img {
 .detail2-hero-title {
     position: absolute;
     top: 50%;
-    left: 200%;
-    transform: translateY(-50%);
-    background-color: white;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.detail2-hero-title h1 {
+    text-align: center;
 }
 
 
@@ -638,8 +641,8 @@ td span {
 .detail3-hero-title {
     position: absolute;
     top: 50%;
-    left: 300px;
-    transform: translateY(-50%);
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 
@@ -702,13 +705,19 @@ td span {
 
 .detail4-hero-title{
     padding-left: 300px;
+    justify-self: end;
+    width: 100%;
+    max-width: 450px;
 }
 
 .detail4-hero img{
     width: 100%;
     height: 100%;
+    max-height: 400px;
+    max-width: 300px;
     object-fit: cover;
     max-width: 450px;
+
 }
 
 
