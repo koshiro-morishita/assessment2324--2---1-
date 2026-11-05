@@ -126,13 +126,6 @@
 
 
                 <section class="contact-form-section">
-                    <!-- form comes next -->
-                    </section>
-
-                    </section>
-
-                    <section class="contact-form-section">
-
                     <h2>Send us a message</h2>
 
                     <p>
@@ -169,9 +162,56 @@
                             placeholder="Enter first name"
                             required>
 
-                    </form>
+                        <label for="surname">Surname *</label>
+                        <input
+                            type="text"
+                            id="surname"
+                            name="surname"
+                            placeholder="Enter last name"
+                            required>
 
+                        <label for="email">Email address *</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Enter email address"
+                            required>
+
+                        <label for="phone">Telephone number</label>
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            placeholder="Enter phone number">
+
+
+                        <label for="message">Your question / request *</label>
+                        <textarea
+                            id="message"
+                            name="message"
+                            placeholder="Write your message here ..."
+                            required>
+                        </textarea>
+
+
+                        <p class="privacy-text">
+                            Your information will only be used to respond to your enquiry
+                            and will not be shared with third parties.
+                        </p>
+
+
+                        <input
+                            type="submit"
+                            value="Send message">
+
+                        <p class="confirmation-text">
+                            You will receive a confirmation email after submitting the form.
+                        </p>
+
+                    </form>
                 </section>
+                    
             </section>
 
 

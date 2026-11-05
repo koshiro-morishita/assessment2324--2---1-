@@ -362,7 +362,7 @@ img {
 
 
 .discover-section {
-    padding: 58px 200px 64px;
+    padding: 20px 300px 70px;
     text-align: center;
 }
 
@@ -814,7 +814,6 @@ td span {
 /* =========== Contact Section =========== */
 
 
-
 .contact-section {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -840,6 +839,11 @@ td span {
 
 .contact-form-section {
     background-color: #F5F1E8;
+    padding: 40px;
+}
+
+.contact-form-section h2 {
+    margin-top: 0;
 }
 
 .contact-form-section form {
@@ -848,12 +852,32 @@ td span {
     gap: 15px;
 }
 
+.contact-form-section fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
 .contact-form-section input,
 .contact-form-section textarea {
     width: 100%;
     padding: 10px;
     box-sizing: border-box;
 }
+
+.contact-form-section textarea {
+    height: 120px;
+}
+
+.privacy-text,
+.confirmation-text {
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+
+
+
 
 /* =========== Welcome Section =========== */
 
