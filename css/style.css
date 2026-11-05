@@ -671,6 +671,9 @@ td span {
 
 /*======= DetailPage3 kanji-example-section ============*/
 
+.kanji-examples-section{
+    padding-top: 20px;
+}
 
 .three-cards {
     display: grid;
@@ -685,8 +688,17 @@ td span {
 
 .kanji-character {
     font-family: "Yuji Syuku", serif;
-    font-size: 80px;
+    font-size: 100px;
     text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.example-card h3 {
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 50px;
 }
 
 /*======= DetailPage3 same-meaning-section ============*/
@@ -694,20 +706,49 @@ td span {
 
 .same-sound-section {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 0.9fr 1.1fr;
     gap: 4rem;
     align-items: center;
     background-color: #F5F1E8;
+    padding-top: 20px;
 
 }
 
 .name-example {
-    background-color: #F5F1E8;
-    padding: 30px;
-    font-size: ;
-    text-align: ;
+    background-color: white;
+    padding: 50px;
 }
 
+.name-example-content{
+    display: grid;
+    grid-template-columns: 0.9fr 2.1fr;
+    gap: 2rem;
+    align-items: center;
+}
+
+.name-example-content h3{
+    font-size: 1.5em;
+}
+
+.name-example-content ul{
+    font-size: 1.5em;
+}
+
+.kai-hiragana{
+    font-family: "Yuji Syuku", serif;
+
+}
+
+/*======= DetailPage3 CTA-section ============*/
+
+
+.detail3-CTA-section{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
 
 
 /*======= DetailPage4============*/
