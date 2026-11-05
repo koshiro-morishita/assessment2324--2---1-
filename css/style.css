@@ -429,6 +429,9 @@ img {
     left: 300px;
     transform: translateY(-50%);
     background-color: white;
+    max-width: 500px;
+    text-align: left;
+
 }
 
 /*======= DetailPage1 History ============*/
@@ -561,68 +564,75 @@ img {
 /*======= DetailPage2 Comparison ============*/
 
 .comparison-section {
-    padding-top: 20px;
+    padding-top: 40px;
+    padding-bottom: 60px;
 }
-
-
 
 .comparison-content {
     display: grid;
-    grid-template-columns: 2.1fr 0.9fr;
+    grid-template-columns: 2fr 1fr;
     gap: 4rem;
-    align-items: center;
+    align-items: start;
+    margin-top: 30px;
 }
 
-.comparison-content table{
+
+.comparison-content table {
     width: 100%;
     border-collapse: collapse;
-    font-size: 1.7rem;
+    font-size: 1.2rem;
 }
 
 .comparison-content th,
-.comparison-content td{
-    border: 1px solid #402712;
-    padding: 16px;
+.comparison-content td {
+    border: none;
+    padding: 14px 8px;
     text-align: left;
+    vertical-align: middle;
+    font-weight: 400;
 }
+
 
 td span {
     display: block;
 }
 
+
 .comparison-figure {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    overflow: hidden;
-
+    margin: 0;
 }
 
 .comparison-figure img {
     width: 100%;
-    height: 120px;
+    height: 110px;
     object-fit: cover;
 }
 
+
+.hiragana-image {
+    object-position: center;
+}
+
 .img2-cropped {
-    height: 120px;
+    height: 110px;
     overflow: hidden;
 }
 
 .katakana-image {
-    transform: scale(1.3);
-    object-position: center 70%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 66%;
+    transform: scale(1.0);
 }
 
-.img3-cropped {
-    height: 120px;
-    overflow: hidden;
-}
 
-.kanji-image{
-    transform: scale(1.1);
+.kanji-image {
+    object-position: center;
 }
-
 
 /*======= DetailPage3============*/
 
@@ -687,11 +697,15 @@ td span {
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
     align-items: center;
+    background-color: #F5F1E8;
+
 }
 
 .name-example {
     background-color: #F5F1E8;
     padding: 30px;
+    font-size: ;
+    text-align: ;
 }
 
 
