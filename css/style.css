@@ -49,6 +49,7 @@ main > section{
     display: inline-block;
     padding: 12px 32px;
     border: 1px solid #A60311;
+    border-radius: 12px;
     background-color: #A60311;
     color: white;
     text-decoration: none;
@@ -234,9 +235,11 @@ img {
 }
 
 .hero-title{
-    justify-self: end;
+    justify-self: center;
     width: 100%;
     max-width: 450px;
+    padding-left: 300px;
+    transform: translateY(-30px);
     
 }
 
