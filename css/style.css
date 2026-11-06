@@ -105,6 +105,8 @@ img {
     margin: 0 auto;
     background-color: #F5F1E8;
     width: 100%;
+    z-index: 10;
+
 }
 
 .site-logo {
@@ -203,16 +205,14 @@ font-size: 0.7em;
     position: absolute;
     left: 0;
     top: 100%;
-
     width: 100%;
     box-sizing: border-box;
-
     list-style: none;
     margin: 0;
     padding: 40px 20px;
-
     background-color: #402712;
     text-align: center;
+     z-index: 101;
 }
 
 .mobile-menu-list li {
@@ -724,6 +724,101 @@ text-decoration: underline;
     width: 100%;
     height: auto;
 }
+
+
+
+
+/* ===== Detail Page 1 Mobile ===== */
+
+@media (max-width: 768px) {
+
+.detail1-hero {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding: 0;
+}
+
+.detail1-hero-title {
+    position: static;
+    order: 1;
+    transform: none;
+    max-width: none;
+    padding: 40px 25px;
+    box-sizing: border-box;
+}
+
+.detail1-hero-title h1 {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.detail1-hero img {
+    order: 2;
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transform: none;
+}
+
+.history-section {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 50px 30px;
+}
+
+.history-section-title,
+.history-section-figure {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+}
+
+.history-section-figure img {
+    width: 100%;
+    height: auto;
+}
+
+
+.types-section {
+    padding: 50px 25px;
+}
+
+.types-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+.types-content table {
+    width: 100%;
+    font-size: 0.9rem;
+}
+
+.types-content th,
+.types-content td {
+    padding: 8px;
+}
+
+.types-content td ul {
+    padding-left: 18px;
+}
+
+.types-figure {
+    margin: 0;
+    max-width: none;
+}
+
+
+.CTA-section {
+    padding: 50px 20px;
+}
+
+.CTA-button {
+    font-size: 1rem;
+    text-align: center;
+}
+}
+
 
 
 
