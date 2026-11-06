@@ -948,6 +948,101 @@ td span {
     object-position: center;
 }
 
+
+/* ===== Detail Page 2 Mobile ===== */
+
+@media (max-width: 768px) {
+
+
+.detail2-hero {
+    display: flex;
+    flex-direction: column-reverse;
+    height: auto;
+    padding: 0;
+}
+
+.detail2-hero-title {
+    position: static;
+    transform: none;
+    width: 100%;
+    max-width: none;
+    padding: 40px 30px;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.detail2-hero-title h1 {
+    font-size: 2.5rem;
+    text-align: left;
+}
+
+.detail2-hero img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+
+.writing-systems-section {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 60px 25px;
+}
+
+.writing-card {
+    padding: 25px;
+}
+
+.writing-card img {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.writing-card .CTA-button {
+    font-size: 1rem;
+    padding: 12px 20px;
+}
+
+
+.comparison-section {
+    padding-top: 0px;
+    padding-bottom: 30px;
+}
+
+.comparison-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+.comparison-content table {
+    width: 100%;
+    font-size: 0.85rem;
+    table-layout: fixed;
+}
+
+.comparison-content th,
+.comparison-content td {
+    padding: 8px 5px;
+    overflow-wrap: break-word;
+}
+
+.comparison-figure {
+    width: 100%;
+    margin: 0;
+}
+
+.comparison-figure img {
+    width: 100%;
+    height: 110px;
+    object-fit: cover;
+}
+
+
+}
+
+
+
+
 /*======= DetailPage3============*/
 
 
@@ -1062,6 +1157,122 @@ td span {
     justify-content: center;
     padding-top: 90px;
     padding-bottom: 90px;
+}
+
+
+
+/* ===== Detail Page 3 Mobile ===== */
+
+@media (max-width: 768px) {
+
+
+.detail3-hero {
+    display: flex;
+    flex-direction: column-reverse;
+    height: auto;
+    padding: 0;
+}
+
+.detail3-hero-title {
+    position: static;
+    transform: none;
+    width: 100%;
+    max-width: none;
+    padding: 40px 30px;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.detail3-hero-title h1 {
+    font-size: 2.5rem;
+    text-align: left;
+}
+
+.detail3-hero img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+
+.shanon-section {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 50px 30px;
+}
+
+.shanon-figure {
+    width: 100%;
+    margin: 0;
+}
+
+.shanon-figure img {
+    width: 100%;
+    height: auto;
+}
+
+
+.kanji-examples-section {
+    padding: 50px 30px;
+}
+
+.three-cards {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-top: 30px;
+}
+
+.example-card {
+    padding: 25px;
+}
+
+.kanji-character {
+    font-size: 75px;
+    margin: 0 0 10px;
+}
+
+.example-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+
+.same-sound-section {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 50px 25px;
+}
+
+.name-example {
+    padding: 20px;
+}
+
+.name-example-content {
+    grid-template-columns: 1fr 2fr;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.name-example-content h3 {
+    font-size: 1rem;
+}
+
+.name-example-content ul {
+    font-size: 1rem;
+    padding-left: 18px;
+}
+
+.detail3-CTA-section {
+    padding: 40px 20px;
+}
+
+.detail3-CTA-section .CTA-button {
+    font-size: 1rem;
+    text-align: center;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
 }
 
 
@@ -1203,6 +1414,88 @@ td span {
     width: 100%;
     height: auto;
 }
+
+
+
+
+
+.mobile-label {
+    display: none;
+}
+
+@media (max-width: 768px) {
+
+.detail4-hero {
+    grid-template-columns: 1fr;
+    height: auto;
+    padding: 40px 30px;
+    gap: 2rem;
+}
+
+.detail4-hero-title,
+.detail4-hero-figure {
+    transform: none;
+    width: 100%;
+    margin: 0;
+}
+
+.detail4-hero img {
+    width: 100%;
+    height: auto;
+}
+
+.name-examples-section {
+    padding: 50px 25px;
+}
+
+.name-examples-table {
+    display: block;
+    width: 100%;
+    font-size: 0.9rem;
+}
+
+.name-examples-table tbody {
+    display: block;
+}
+
+.table-header {
+    display: none;
+}
+
+.name-examples-table tr {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 20px;
+}
+
+.name-examples-table td {
+    display: block;
+    min-width: 0;
+    padding: 10px 5px;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.mobile-label {
+    display: block;
+    background-color: #cccccc;
+    padding: 8px 2px;
+    margin-bottom: 10px;
+    font-family: "Sedan", serif;
+    font-size: 0.75rem;
+}
+
+.name-examples-table .meaning-cell {
+    grid-column: 1 / 4;
+    text-align: left;
+}
+
+.meaning-cell p {
+    font-size: 0.9rem;
+}
+}
+
+
 
 
 
