@@ -876,6 +876,7 @@ td span {
     justify-self: end;
     width: 100%;
     max-width: 500px;
+    transform: translateY(-30px);
 }
 
 .case-figure {
@@ -933,6 +934,14 @@ td span {
     max-width: 500px;
 }
 
+.contact-info h2{
+    font-size: 2em;
+}
+
+.contact-info section{
+    padding-bottom: 10px;
+}
+
 .map-figure {
     margin: 0;
     max-width: 500px;
@@ -949,41 +958,92 @@ td span {
 .contact-form-section {
     background-color: #F5F1E8;
     padding: 40px;
+    max-height: 860px;
+    transform: translateY(12.2%);
 }
 
 .contact-form-section h2 {
     margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.contact-form-section > p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    
 }
 
 .contact-form-section form {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 12px;
 }
+
+
+/* Title radio buttons */
 
 .contact-form-section fieldset {
     border: none;
     padding: 0;
-    margin: 0;
+    margin: 0 0 10px 0;
 }
 
-.contact-form-section input,
+.contact-form-section legend {
+    margin-bottom: 10px;
+}
+
+.contact-form-section fieldset label {
+    margin-right: 35px;
+}
+
+
+/* Text input fields */
+
+.contact-form-section input[type="text"],
+.contact-form-section input[type="email"],
+.contact-form-section input[type="tel"],
 .contact-form-section textarea {
     width: 100%;
     padding: 10px;
     box-sizing: border-box;
+    font-family: "Sedan", serif;
 }
+
+
+/* Message box */
 
 .contact-form-section textarea {
     height: 120px;
 }
 
-.privacy-text,
-.confirmation-text {
-    font-size: 0.8rem;
-    text-align: center;
+
+/* Submit button */
+
+.contact-form-section input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #402712;
+    color: white;
+    border: none;
+    font-family: "Sedan", serif;
+    font-size: 1.1rem;
 }
 
+.contact-form-section input[type="submit"]:hover {
+    background-color: #7F020D;
+}
+
+
+/* Small text */
+
+.privacy-text,
+.confirmation-text {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    text-align: left;
+    margin: 0;
+}
 
 
 
