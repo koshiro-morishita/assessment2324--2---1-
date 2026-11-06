@@ -147,6 +147,92 @@ img {
 
 
 
+@media (max-width: 768px) {
+
+.desktop-navigation {
+    display: none;
+}
+
+.site-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 12px 0 0;
+}
+
+.site-header > .site-logo {
+    align-self: flex-start;
+    margin-left: 20px;
+}
+
+.mobile-navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+
+    width: 100%;
+    margin-top: 10px;
+    padding-bottom: 15px;
+
+    position: relative;
+}
+
+.mobile-navigation > a {
+    color: black;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.mobile-navigation > a.current-page {
+    color: #A60311;
+    text-decoration: underline;
+}
+
+.mobile-menu summary {
+    cursor: pointer;
+    list-style: none;
+    font-size: 1rem;
+}
+
+.menu-arrow {
+font-size: 0.7em;
+}
+
+.mobile-menu-list {
+    position: absolute;
+    left: 0;
+    top: 100%;
+
+    width: 100%;
+    box-sizing: border-box;
+
+    list-style: none;
+    margin: 0;
+    padding: 40px 20px;
+
+    background-color: #402712;
+    text-align: center;
+}
+
+.mobile-menu-list li {
+    margin-bottom: 25px;
+}
+
+.mobile-menu-list a {
+    color: white;
+    text-decoration: none;
+}
+
+.mobile-navigation .current-page{
+text-decoration: underline;
+}
+
+
+
+}
+
+
 /*======== Footer =========*/
 
 
@@ -219,8 +305,56 @@ img {
 }
 
 
+@media (max-width: 768px) {
+
+    main > section {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .site-footer {
+        padding-left: 20px;
+        padding-right: 20px;
+        grid-template-columns: 1fr;
+    }
+
+    .copyright {
+        grid-column: 1;
+    }
 
 
+
+    
+    .desktop-navigation {
+        display: none;
+    }
+
+    .mobile-navigation {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .site-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px 20px;
+    }
+
+}
 
 
 
@@ -397,9 +531,79 @@ img {
 
 
 
+/*  ===========HP mobile============*/
 
 
+@media (max-width: 768px) {
 
+/* ===== Homepage Mobile ===== */
+
+.hero,
+.first-section,
+.second-section,
+.third-section {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+
+/* ===== Homepage Mobile Hero ===== */
+
+.hero-title {
+    padding-left: 0;
+    transform: none;
+    max-width: 100%;
+    justify-self: center;
+}
+
+.hero-figure {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+}
+
+
+/* ===== Homepage Mobile Sections ===== */
+
+.first-section-title,
+.second-section-title,
+.third-section-title {
+    order: 1;
+    max-width: 100%;
+}
+
+.first-section-figure,
+.second-section-figure,
+.third-section-figure {
+    order: 2;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+}
+
+
+/* ===== Homepage Mobile Discover More ===== */
+
+.discover-section {
+    padding: 50px 50px;
+}
+
+.discover-cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem 1rem;
+}
+
+.discover-card img {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+}
+    
+}
 
 
 /*======= Detail Page 1 ============*/
@@ -1098,75 +1302,3 @@ td span {
 
 
 
-
-
-
-
-@media (max-width: 768px) {
-
-    
-    .desktop-navigation {
-        display: none;
-    }
-
-    .mobile-navigation {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-    }
-
-    .site-header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 12px 20px;
-    }
-
-    .learn-menu {
-        list-style: none;
-        padding: 15px;
-        background-color: #402712;
-    }
-
-    .learn-menu a {
-        color: white;
-        text-decoration: none;
-
-    }
-
-
-
-    .site-footer {
-        grid-template-columns: 1fr;
-    }
-
-    .copyright {
-        grid-column: 1;
-    }
-
-    /*=======HP =============*/
-    .hero
-    .first-section,
-    .second-section,
-    .third-section {
-        grid-template-columns: 1fr;
-    }
-
-    .first-section-title,
-    .second-section-title,
-    .third-section-title {
-        order: 1;
-    }
-
-    .first-section-figure,
-    .second-section-figure,
-    .third-section-figure {
-        order: 2;
-    }
-
-    .discover-cards {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    
-}
