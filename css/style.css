@@ -818,6 +818,19 @@ td span {
     width: 100%;
     border-collapse: collapse;
     margin-top: 30px;
+    font-size: 1.6rem;
+}
+
+.name-column{
+    width: 11%;
+}
+
+.katakana-column {
+    width: 20%;
+}
+
+.kanji-column {
+    width: 18%;
 }
 
 .name-examples-table th,
@@ -831,9 +844,20 @@ td span {
     background-color: #cccccc;
 }
 
+.name-examples-table td {
+    background-color: white;
+}
+
 .name-examples-table th span {
     display: block;
     font-size: 0.8rem;
+}
+
+.bea-katakana,
+.bea-kanji,
+.ellen-katakana,
+.ellen-kanji{
+    font-family: "Yuji Syuku", serif;
 }
 
 
