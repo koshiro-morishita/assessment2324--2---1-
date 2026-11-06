@@ -377,6 +377,10 @@ text-decoration: underline;
     
 }
 
+.your-hanko{
+    display: block;
+}
+
 .hero-subtitle{
     font-size: 25px;
     line-height: 1.6;
@@ -553,6 +557,9 @@ text-decoration: underline;
 
 /* ===== Homepage Mobile Hero ===== */
 
+.hero{
+    padding-top: 20px;
+}
 .hero-title {
     padding-left: 0;
     transform: none;
@@ -594,13 +601,21 @@ text-decoration: underline;
 
 .discover-cards {
     grid-template-columns: repeat(2, 1fr);
-    gap: 2rem 1rem;
+    gap: 1rem 1rem;
+    max-width: 700px;
+}
+
+.discover-card figure {
+    margin: 0;
 }
 
 .discover-card img {
     width: 100px;
     height: 100px;
     margin: 0 auto;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    object-fit: cover;
 }
     
 }
