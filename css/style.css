@@ -292,6 +292,10 @@ text-decoration: underline;
     text-decoration: underline;
 }
 
+.footer-navigation .current-page{
+    text-decoration: underline;
+}
+
 .footer-contact a {
     color: white;
     text-decoration: underline;
@@ -1423,7 +1427,7 @@ td span {
     display: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px){
 
 .detail4-hero {
     grid-template-columns: 1fr;
@@ -1448,52 +1452,40 @@ td span {
     padding: 50px 25px;
 }
 
+.table-scroll{
+    overflow-x: auto;
+}
+
 .name-examples-table {
-    display: block;
-    width: 100%;
-    font-size: 0.9rem;
+    min-width: 700px;
+    font-size: 1rem;
 }
 
-.name-examples-table tbody {
-    display: block;
-}
-
-.table-header {
-    display: none;
-}
-
-.name-examples-table tr {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    margin-bottom: 20px;
-}
-
+.name-examples-table th,
 .name-examples-table td {
-    display: block;
-    min-width: 0;
-    padding: 10px 5px;
-    text-align: center;
-    font-size: 0.9rem;
+    padding: 12px;
 }
 
-.mobile-label {
-    display: block;
-    background-color: #cccccc;
-    padding: 8px 2px;
-    margin-bottom: 10px;
-    font-family: "Sedan", serif;
-    font-size: 0.75rem;
+
+
+.case-section {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 50px 25px;
 }
 
-.name-examples-table .meaning-cell {
-    grid-column: 1 / 4;
-    text-align: left;
+.case-text {
+    transform: none;
+    width: 100%;
 }
 
-.meaning-cell p {
-    font-size: 0.9rem;
+.case-figure {
+    width: 100%;
+    margin: 0;
 }
 }
+
+
 
 
 
@@ -1695,6 +1687,98 @@ td span {
 
 
 
+
+/* ===== Contact Page Mobile ===== */
+
+@media (max-width: 768px) {
+
+
+.contact-hero {
+    height: 220px;
+    padding: 0;
+}
+
+.contact-hero-title {
+    top: 50%;
+    left: 50%;
+    right: auto;
+    transform: translate(-50%, -50%);
+    padding: 10px 30px;
+    width: 65%;
+}
+
+.contact-hero-title h1 {
+    font-size: 2rem;
+}
+
+
+.contact-section {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 40px 25px;
+}
+
+.contact-info {
+    width: 100%;
+}
+
+.contact-info h2 {
+    font-size: 1.3rem;
+}
+
+.map-figure {
+    width: 100%;
+    margin: 0;
+}
+
+
+.contact-form-section {
+    padding: 25px 20px;
+    max-height: none;
+    transform: none;
+}
+
+.contact-form-section h2 {
+    font-size: 1.5rem;
+}
+
+
+.welcome-section {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    padding: 40px 20px;
+}
+
+.welcome-text {
+    grid-column: 1 / 3;
+    font-size: 1rem;
+    padding: 0;
+}
+
+.welcome-text h2 {
+    font-size: 1.5rem;
+}
+
+.welcome-section figure {
+    margin: 0;
+}
+
+.welcome-section img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.welcome-section figcaption {
+    font-size: 0.8rem;
+}
+
+.owner img{
+    object-position: center ;
+
+}
+
+}
 
 
 
