@@ -1,5 +1,5 @@
-Student name: your name 
-Student number: your student number
-Student class: your class
-GitHub Repository: your github repository URL
-GitHub Pages URL: your github pages URL
+Student name: Koshiro Morishita
+Student number: 759222
+Student class: IT1A
+GitHub Repository: https://github.com/koshiro-morishita/assessment2324--2---1-.git
+GitHub Pages URL:  https://koshiro-morishita.github.io/assessment2324--2---1-/
