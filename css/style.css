@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Sedan&family=Yuji+Syuku&display=swap');
 
 
-/* ============= common throughout the site =============*/
+/* ------------ common throughout the site -------------------------*/
 
 .site-header,
 .site-footer {
@@ -12,7 +12,7 @@
     box-sizing: border-box;
 }
 
-main > section{
+main>section {
     padding-top: 80px;
     padding-left: 300px;
     padding-right: 300px;
@@ -25,18 +25,18 @@ main > section{
 .detail2-hero-title,
 .detail3-hero-title,
 .detail4-hero-title,
-.contact-hero-title{
+.contact-hero-title {
     background-color: white;
     max-width: 600px;
     padding-top: 0px;
     padding-left: 25px;
     padding-right: 25px;
-    padding-bottom: 5px;;
+    padding-bottom: 5px;
     text-align: center;
 }
 
 
-.CTA-section{
+.CTA-section {
     background-color: #F5F1E8;
     display: flex;
     justify-content: center;
@@ -45,7 +45,7 @@ main > section{
 
 }
 
-.CTA-button{
+.CTA-button {
     display: inline-block;
     padding: 12px 32px;
     border: 1px solid #A60311;
@@ -56,35 +56,35 @@ main > section{
     font-size: 30px;
 }
 
-.CTA-button:hover{
+.CTA-button:hover {
     background-color: #7F020D;
     border-color: #7F020D;
 }
 
 
-/* ============= common fonts throughout the site =============*/
+/* -------------- common fonts throughout the site ------------------*/
 
 
 
 
-h1{
+h1 {
     font-family: "Cormorant Garamond", serif;
     font-size: 80px;
     font-weight: 700;
 }
 
-h2{
+h2 {
     font-family: "Cormorant Garamond", serif;
     font-size: 50px;
     font-weight: 500;
 }
 
-body{
+body {
     font-family: "Sedan", serif;
     margin: 0;
 }
 
-p{
+p {
     font-size: 25px;
     line-height: 1.6;
 }
@@ -97,9 +97,7 @@ img {
 
 
 
-
-
-/*========= Header section ===========*/
+/*------------- Header section -------------*/
 
 .site-header {
     margin: 0 auto;
@@ -115,7 +113,7 @@ img {
     height: auto;
 }
 
-.desktop-navigation{
+.desktop-navigation {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -128,22 +126,22 @@ img {
     display: none;
 }
 
-.desktop-navigation > a {
+.desktop-navigation>a {
     font-size: 25px;
     text-decoration: none;
 }
 
-.desktop-navigation > a.current-page{
+.desktop-navigation>a.current-page {
     color: #A60311;
     text-decoration: underline;
 }
 
-.desktop-navigation > a:hover {
+.desktop-navigation>a:hover {
     text-decoration: underline;
     color: #A60311;
 }
 
-.desktop-navigation > a:active {
+.desktop-navigation>a:active {
     color: #7F020D;
 }
 
@@ -151,89 +149,89 @@ img {
 
 @media (max-width: 768px) {
 
-.desktop-navigation {
-    display: none;
+    .desktop-navigation {
+        display: none;
+    }
+
+    .site-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 12px 0 0;
+    }
+
+    .site-header>.site-logo {
+        align-self: flex-start;
+        margin-left: 20px;
+    }
+
+    .mobile-navigation {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+
+        width: 100%;
+        margin-top: 10px;
+        padding-bottom: 15px;
+
+        position: relative;
+    }
+
+    .mobile-navigation>a {
+        color: black;
+        text-decoration: none;
+        font-size: 1rem;
+    }
+
+    .mobile-navigation>a.current-page {
+        color: #A60311;
+        text-decoration: underline;
+    }
+
+    .mobile-menu summary {
+        cursor: pointer;
+        list-style: none;
+        font-size: 1rem;
+    }
+
+    .menu-arrow {
+        font-size: 0.7em;
+    }
+
+    .mobile-menu-list {
+        position: absolute;
+        left: 0;
+        top: 100%;
+        width: 100%;
+        box-sizing: border-box;
+        list-style: none;
+        margin: 0;
+        padding: 40px 20px;
+        background-color: #402712;
+        text-align: center;
+        z-index: 101;
+    }
+
+    .mobile-menu-list li {
+        margin-bottom: 25px;
+    }
+
+    .mobile-menu-list a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .mobile-navigation .current-page {
+        text-decoration: underline;
+    }
+
+
+
 }
 
-.site-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 12px 0 0;
-}
 
-.site-header > .site-logo {
-    align-self: flex-start;
-    margin-left: 20px;
-}
-
-.mobile-navigation {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 12px;
-
-    width: 100%;
-    margin-top: 10px;
-    padding-bottom: 15px;
-
-    position: relative;
-}
-
-.mobile-navigation > a {
-    color: black;
-    text-decoration: none;
-    font-size: 1rem;
-}
-
-.mobile-navigation > a.current-page {
-    color: #A60311;
-    text-decoration: underline;
-}
-
-.mobile-menu summary {
-    cursor: pointer;
-    list-style: none;
-    font-size: 1rem;
-}
-
-.menu-arrow {
-font-size: 0.7em;
-}
-
-.mobile-menu-list {
-    position: absolute;
-    left: 0;
-    top: 100%;
-    width: 100%;
-    box-sizing: border-box;
-    list-style: none;
-    margin: 0;
-    padding: 40px 20px;
-    background-color: #402712;
-    text-align: center;
-     z-index: 101;
-}
-
-.mobile-menu-list li {
-    margin-bottom: 25px;
-}
-
-.mobile-menu-list a {
-    color: white;
-    text-decoration: none;
-}
-
-.mobile-navigation .current-page{
-text-decoration: underline;
-}
-
-
-
-}
-
-
-/*======== Footer =========*/
+/*--------------- Footer ------------------------*/
 
 
 .site-footer {
@@ -292,7 +290,7 @@ text-decoration: underline;
     text-decoration: underline;
 }
 
-.footer-navigation .current-page{
+.footer-navigation .current-page {
     text-decoration: underline;
 }
 
@@ -311,7 +309,7 @@ text-decoration: underline;
 
 @media (max-width: 768px) {
 
-    main > section {
+    main>section {
         padding-left: 20px;
         padding-right: 20px;
     }
@@ -340,7 +338,7 @@ text-decoration: underline;
 
 
 
-    
+
     .desktop-navigation {
         display: none;
     }
@@ -362,7 +360,7 @@ text-decoration: underline;
 
 
 
-/* =========== HP Hero Section ==============*/
+/* --------------- HP Hero Section -----------------------*/
 
 .hero {
     display: grid;
@@ -372,42 +370,41 @@ text-decoration: underline;
     padding: 58px 24px 64px;
 }
 
-.hero-title{
+.hero-title {
     justify-self: center;
     width: 100%;
     max-width: 450px;
     padding-left: 300px;
     transform: translateY(-30px);
-    
+
 }
 
-.your-hanko{
+.your-hanko {
     display: block;
 }
 
-.hero-subtitle{
+.hero-subtitle {
     font-size: 25px;
     line-height: 1.6;
 
 }
 
-.hero-figure{
+.hero-figure {
     justify-self: start;
     width: 100%;
     max-width: 500px;
 }
 
-.hero-figure img{
+.hero-figure img {
     width: 100%;
     aspect-ratio: 1.25 / 1;
     object-fit: cover
-
 }
 
 
 
 
-/*  ===========HP First Section============*/
+/*  ---------------HP First Section-----------------*/
 
 .first-section {
     display: grid;
@@ -424,7 +421,7 @@ text-decoration: underline;
     max-width: 500px;
 }
 
-.first-section-figure{
+.first-section-figure {
     justify-self: end;
     width: 100%;
     max-width: 400px;
@@ -437,7 +434,7 @@ text-decoration: underline;
 }
 
 
-/*  ===========HP second Section============*/
+/*  ------------HP second Section----------------*/
 
 .second-section {
     display: grid;
@@ -454,10 +451,10 @@ text-decoration: underline;
     width: 100%;
     max-width: 500px;
     color: white;
-    
+
 }
 
-.second-section-figure{
+.second-section-figure {
     justify-self: end;
     width: 100%;
     max-width: 400px;
@@ -470,7 +467,7 @@ text-decoration: underline;
 }
 
 
-/*  ===========HP third Section============*/
+/* -----------------HP third Section----------------*/
 
 .third-section {
     display: grid;
@@ -487,10 +484,10 @@ text-decoration: underline;
     width: 100%;
     max-width: 500px;
     color: black;
-    
+
 }
 
-.third-section-figure{
+.third-section-figure {
     justify-self: end;
     width: 100%;
     max-width: 400px;
@@ -503,7 +500,7 @@ text-decoration: underline;
 }
 
 
-/*  ===========HP discover Section============*/
+/*  --------------HP discover Section-----------------*/
 
 
 .discover-section {
@@ -511,7 +508,7 @@ text-decoration: underline;
     text-align: center;
 }
 
-.discover-cards{
+.discover-cards {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
@@ -521,12 +518,12 @@ text-decoration: underline;
     text-align: center;
 }
 
-.discover-card > a {
+.discover-card>a {
     text-decoration: none;
     color: black;
 }
 
-.discover-card h3{
+.discover-card h3 {
     text-decoration: underline;
 }
 
@@ -544,90 +541,91 @@ text-decoration: underline;
 
 @media (max-width: 768px) {
 
-/* ===== Homepage Mobile ===== */
+    /* ----------Homepage Mobile ------------- */
 
-.hero,
-.first-section,
-.second-section,
-.third-section {
-    grid-template-columns: 1fr;
-    gap: 2rem;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    .hero,
+    .first-section,
+    .second-section,
+    .third-section {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+
+    /* --------- Homepage Mobile Hero ------------ */
+
+    .hero {
+        padding-top: 20px;
+    }
+
+    .hero-title {
+        padding-left: 0;
+        transform: none;
+        max-width: 100%;
+        justify-self: center;
+    }
+
+    .hero-figure {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+    }
+
+
+    /* ---------- Homepage Mobile Sections-------------*/
+
+    .first-section-title,
+    .second-section-title,
+    .third-section-title {
+        order: 1;
+        max-width: 100%;
+    }
+
+    .first-section-figure,
+    .second-section-figure,
+    .third-section-figure {
+        order: 2;
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+    }
+
+
+    /* ---------- Homepage Mobile Discover More------------ */
+
+    .discover-section {
+        padding: 50px 50px;
+    }
+
+    .discover-cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem 1rem;
+        max-width: 700px;
+    }
+
+    .discover-card figure {
+        margin: 0;
+    }
+
+    .discover-card img {
+        width: 100px;
+        height: 100px;
+        margin: 0 auto;
+        aspect-ratio: 1 / 1;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
 }
 
 
-/* ===== Homepage Mobile Hero ===== */
+/*---------- Detail Page 1 ---------*/
 
-.hero{
-    padding-top: 20px;
-}
-.hero-title {
-    padding-left: 0;
-    transform: none;
-    max-width: 100%;
-    justify-self: center;
-}
-
-.hero-figure {
-    width: 100%;
-    max-width: 100%;
-    margin: 0;
-}
-
-
-/* ===== Homepage Mobile Sections ===== */
-
-.first-section-title,
-.second-section-title,
-.third-section-title {
-    order: 1;
-    max-width: 100%;
-}
-
-.first-section-figure,
-.second-section-figure,
-.third-section-figure {
-    order: 2;
-    width: 100%;
-    max-width: 100%;
-    margin: 0;
-}
-
-
-/* ===== Homepage Mobile Discover More ===== */
-
-.discover-section {
-    padding: 50px 50px;
-}
-
-.discover-cards {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem 1rem;
-    max-width: 700px;
-}
-
-.discover-card figure {
-    margin: 0;
-}
-
-.discover-card img {
-    width: 100px;
-    height: 100px;
-    margin: 0 auto;
-    aspect-ratio: 1 / 1;
-    border-radius: 50%;
-    object-fit: cover;
-}
-    
-}
-
-
-/*======= Detail Page 1 ============*/
-
-/*======= DetailPage1 Hero ============*/
+/*----------- DetailPage1 Hero ---------------*/
 
 
 .detail1-hero {
@@ -657,7 +655,7 @@ text-decoration: underline;
 
 }
 
-/*======= DetailPage1 History ============*/
+/*----------- DetailPage1 History -----------*/
 
 
 .history-section {
@@ -675,7 +673,7 @@ text-decoration: underline;
     max-width: 500px;
 }
 
-.history-section-figure{
+.history-section-figure {
     justify-self: start;
     width: 100%;
     max-width: 400px;
@@ -686,13 +684,13 @@ text-decoration: underline;
     height: auto;
 }
 
-/*======= DetailPage1 Types and Usage ============*/
+/*----------- DetailPage1 Types and Usage -------------*/
 
 .types-section {
     background-color: white;
 }
 
-.types-section > p {
+.types-section>p {
     max-width: 600px;
 }
 
@@ -704,14 +702,14 @@ text-decoration: underline;
     margin-top: 30px;
 }
 
-.types-content table{
+.types-content table {
     width: 100%;
     border-collapse: collapse;
     font-size: 1.2rem;
 }
 
 .types-content th,
-.types-content td{
+.types-content td {
     border: 1px solid #402712;
     padding: 16px;
     text-align: left;
@@ -732,105 +730,105 @@ text-decoration: underline;
 
 
 
-/* ===== Detail Page 1 Mobile ===== */
+/* -------- Detail Page 1 Mobile ------------ */
 
 @media (max-width: 768px) {
 
-.detail1-hero {
-    display: flex;
-    flex-direction: column;
-    height: auto;
-    padding: 0;
+    .detail1-hero {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        padding: 0;
+    }
+
+    .detail1-hero-title {
+        position: static;
+        order: 1;
+        transform: none;
+        max-width: none;
+        padding: 40px 25px;
+        box-sizing: border-box;
+    }
+
+    .detail1-hero-title h1 {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .detail1-hero img {
+        order: 2;
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        transform: none;
+    }
+
+    .history-section {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: 50px 30px;
+    }
+
+    .history-section-title,
+    .history-section-figure {
+        width: 100%;
+        max-width: none;
+        margin: 0;
+    }
+
+    .history-section-figure img {
+        width: 100%;
+        height: auto;
+    }
+
+
+    .types-section {
+        padding: 50px 25px;
+    }
+
+    .types-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .types-content table {
+        width: 100%;
+        font-size: 0.9rem;
+    }
+
+    .types-content th,
+    .types-content td {
+        padding: 8px;
+    }
+
+    .types-content td ul {
+        padding-left: 18px;
+    }
+
+    .types-figure {
+        margin: 0;
+        max-width: none;
+    }
+
+
+    .CTA-section {
+        padding: 50px 20px;
+    }
+
+    .CTA-button {
+        font-size: 1rem;
+        text-align: center;
+    }
 }
 
-.detail1-hero-title {
-    position: static;
-    order: 1;
-    transform: none;
-    max-width: none;
-    padding: 40px 25px;
-    box-sizing: border-box;
-}
-
-.detail1-hero-title h1 {
-    font-size: 2.5rem;
-    text-align: center;
-}
-
-.detail1-hero img {
-    order: 2;
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-    transform: none;
-}
-
-.history-section {
-    grid-template-columns: 1fr;
-    gap: 2rem;
-    padding: 50px 30px;
-}
-
-.history-section-title,
-.history-section-figure {
-    width: 100%;
-    max-width: none;
-    margin: 0;
-}
-
-.history-section-figure img {
-    width: 100%;
-    height: auto;
-}
-
-
-.types-section {
-    padding: 50px 25px;
-}
-
-.types-content {
-    grid-template-columns: 1fr;
-    gap: 2rem;
-}
-
-.types-content table {
-    width: 100%;
-    font-size: 0.9rem;
-}
-
-.types-content th,
-.types-content td {
-    padding: 8px;
-}
-
-.types-content td ul {
-    padding-left: 18px;
-}
-
-.types-figure {
-    margin: 0;
-    max-width: none;
-}
-
-
-.CTA-section {
-    padding: 50px 20px;
-}
-
-.CTA-button {
-    font-size: 1rem;
-    text-align: center;
-}
-}
 
 
 
 
+/*---------- DetailPage2-----------*/
 
-/*======= DetailPage2============*/
 
-
-/*======= DetailPage2 Hero ============*/
+/*----------- DetailPage2 Hero ------------*/
 
 .detail2-hero {
     position: relative;
@@ -858,7 +856,7 @@ text-decoration: underline;
 
 
 
-/*======= DetailPage2 Cards ============*/
+/*---------- DetailPage2 Cards ------------*/
 
 .writing-systems-section {
     display: grid;
@@ -879,7 +877,7 @@ text-decoration: underline;
     margin: 0 auto;
 }
 
-/*======= DetailPage2 Comparison ============*/
+/*-------------DetailPage2 Comparison ----------------*/
 
 .comparison-section {
     padding-top: 40px;
@@ -953,104 +951,104 @@ td span {
 }
 
 
-/* ===== Detail Page 2 Mobile ===== */
+/* ---------Detail Page 2 Mobile ----------- */
 
 @media (max-width: 768px) {
 
 
-.detail2-hero {
-    display: flex;
-    flex-direction: column-reverse;
-    height: auto;
-    padding: 0;
+    .detail2-hero {
+        display: flex;
+        flex-direction: column-reverse;
+        height: auto;
+        padding: 0;
+    }
+
+    .detail2-hero-title {
+        position: static;
+        transform: none;
+        width: 100%;
+        max-width: none;
+        padding: 40px 30px;
+        box-sizing: border-box;
+        text-align: left;
+    }
+
+    .detail2-hero-title h1 {
+        font-size: 2.5rem;
+        text-align: left;
+    }
+
+    .detail2-hero img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+    }
+
+
+    .writing-systems-section {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        padding: 60px 25px;
+    }
+
+    .writing-card {
+        padding: 25px;
+    }
+
+    .writing-card img {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .writing-card .CTA-button {
+        font-size: 1rem;
+        padding: 12px 20px;
+    }
+
+
+    .comparison-section {
+        padding-top: 0px;
+        padding-bottom: 30px;
+    }
+
+    .comparison-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .comparison-content table {
+        width: 100%;
+        font-size: 0.85rem;
+        table-layout: fixed;
+    }
+
+    .comparison-content th,
+    .comparison-content td {
+        padding: 8px 5px;
+        overflow-wrap: break-word;
+    }
+
+    .comparison-figure {
+        width: 100%;
+        margin: 0;
+    }
+
+    .comparison-figure img {
+        width: 100%;
+        height: 110px;
+        object-fit: cover;
+    }
+
+
 }
 
-.detail2-hero-title {
-    position: static;
-    transform: none;
-    width: 100%;
-    max-width: none;
-    padding: 40px 30px;
-    box-sizing: border-box;
-    text-align: left;
-}
-
-.detail2-hero-title h1 {
-    font-size: 2.5rem;
-    text-align: left;
-}
-
-.detail2-hero img {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-}
-
-
-.writing-systems-section {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-    padding: 60px 25px;
-}
-
-.writing-card {
-    padding: 25px;
-}
-
-.writing-card img {
-    max-width: 100%;
-    margin: 0 auto;
-}
-
-.writing-card .CTA-button {
-    font-size: 1rem;
-    padding: 12px 20px;
-}
-
-
-.comparison-section {
-    padding-top: 0px;
-    padding-bottom: 30px;
-}
-
-.comparison-content {
-    grid-template-columns: 1fr;
-    gap: 2rem;
-}
-
-.comparison-content table {
-    width: 100%;
-    font-size: 0.85rem;
-    table-layout: fixed;
-}
-
-.comparison-content th,
-.comparison-content td {
-    padding: 8px 5px;
-    overflow-wrap: break-word;
-}
-
-.comparison-figure {
-    width: 100%;
-    margin: 0;
-}
-
-.comparison-figure img {
-    width: 100%;
-    height: 110px;
-    object-fit: cover;
-}
-
-
-}
 
 
 
+/*------------ DetailPage3-------------*/
 
-/*======= DetailPage3============*/
 
-
-/*======= DetailPage3 Hero ============*/
+/*------------ DetailPage3 Hero -------------*/
 
 .detail3-hero {
     position: relative;
@@ -1072,7 +1070,7 @@ td span {
 }
 
 
-/*======= DetailPage3 Shanon-section ============*/
+/*----------- DetailPage3 Shanon-section -------------*/
 
 .shanon-section {
     display: grid;
@@ -1082,9 +1080,9 @@ td span {
     background-color: #F5F1E8;
 }
 
-/*======= DetailPage3 kanji-example-section ============*/
+/*------------ DetailPage3 kanji-example-section -------------*/
 
-.kanji-examples-section{
+.kanji-examples-section {
     padding-top: 20px;
 }
 
@@ -1114,7 +1112,7 @@ td span {
     margin-bottom: 50px;
 }
 
-/*======= DetailPage3 same-meaning-section ============*/
+/*------------- DetailPage3 same-meaning-section --------------*/
 
 
 .same-sound-section {
@@ -1132,30 +1130,30 @@ td span {
     padding: 50px;
 }
 
-.name-example-content{
+.name-example-content {
     display: grid;
     grid-template-columns: 0.9fr 2.1fr;
     gap: 2rem;
     align-items: center;
 }
 
-.name-example-content h3{
+.name-example-content h3 {
     font-size: 1.5em;
 }
 
-.name-example-content ul{
+.name-example-content ul {
     font-size: 1.5em;
 }
 
-.kai-hiragana{
+.kai-hiragana {
     font-family: "Yuji Syuku", serif;
 
 }
 
-/*======= DetailPage3 CTA-section ============*/
+/*------------ DetailPage3 CTA-section ----------------*/
 
 
-.detail3-CTA-section{
+.detail3-CTA-section {
     background-color: white;
     display: flex;
     justify-content: center;
@@ -1165,126 +1163,126 @@ td span {
 
 
 
-/* ===== Detail Page 3 Mobile ===== */
+/* ----------- Detail Page 3 Mobile ----------------- */
 
 @media (max-width: 768px) {
 
 
-.detail3-hero {
-    display: flex;
-    flex-direction: column-reverse;
-    height: auto;
-    padding: 0;
+    .detail3-hero {
+        display: flex;
+        flex-direction: column-reverse;
+        height: auto;
+        padding: 0;
+    }
+
+    .detail3-hero-title {
+        position: static;
+        transform: none;
+        width: 100%;
+        max-width: none;
+        padding: 40px 30px;
+        box-sizing: border-box;
+        text-align: left;
+    }
+
+    .detail3-hero-title h1 {
+        font-size: 2.5rem;
+        text-align: left;
+    }
+
+    .detail3-hero img {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+    }
+
+
+    .shanon-section {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: 50px 30px;
+    }
+
+    .shanon-figure {
+        width: 100%;
+        margin: 0;
+    }
+
+    .shanon-figure img {
+        width: 100%;
+        height: auto;
+    }
+
+
+    .kanji-examples-section {
+        padding: 50px 30px;
+    }
+
+    .three-cards {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        margin-top: 30px;
+    }
+
+    .example-card {
+        padding: 25px;
+    }
+
+    .kanji-character {
+        font-size: 75px;
+        margin: 0 0 10px;
+    }
+
+    .example-card h3 {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+
+
+    .same-sound-section {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: 50px 25px;
+    }
+
+    .name-example {
+        padding: 20px;
+    }
+
+    .name-example-content {
+        grid-template-columns: 1fr 2fr;
+        gap: 0.5rem;
+        align-items: center;
+    }
+
+    .name-example-content h3 {
+        font-size: 1rem;
+    }
+
+    .name-example-content ul {
+        font-size: 1rem;
+        padding-left: 18px;
+    }
+
+    .detail3-CTA-section {
+        padding: 40px 20px;
+    }
+
+    .detail3-CTA-section .CTA-button {
+        font-size: 1rem;
+        text-align: center;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
 }
 
-.detail3-hero-title {
-    position: static;
-    transform: none;
-    width: 100%;
-    max-width: none;
-    padding: 40px 30px;
-    box-sizing: border-box;
-    text-align: left;
-}
 
-.detail3-hero-title h1 {
-    font-size: 2.5rem;
-    text-align: left;
-}
+/*-------------- DetailPage4------------*/
 
-.detail3-hero img {
-    width: 100%;
-    height: 220px;
-    object-fit: cover;
-}
+/*----------- DetailPage4 Hero-----------*/
 
-
-.shanon-section {
-    grid-template-columns: 1fr;
-    gap: 2rem;
-    padding: 50px 30px;
-}
-
-.shanon-figure {
-    width: 100%;
-    margin: 0;
-}
-
-.shanon-figure img {
-    width: 100%;
-    height: auto;
-}
-
-
-.kanji-examples-section {
-    padding: 50px 30px;
-}
-
-.three-cards {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-    margin-top: 30px;
-}
-
-.example-card {
-    padding: 25px;
-}
-
-.kanji-character {
-    font-size: 75px;
-    margin: 0 0 10px;
-}
-
-.example-card h3 {
-    font-size: 1.5rem;
-    margin-bottom: 20px;
-}
-
-
-.same-sound-section {
-    grid-template-columns: 1fr;
-    gap: 2rem;
-    padding: 50px 25px;
-}
-
-.name-example {
-    padding: 20px;
-}
-
-.name-example-content {
-    grid-template-columns: 1fr 2fr;
-    gap: 0.5rem;
-    align-items: center;
-}
-
-.name-example-content h3 {
-    font-size: 1rem;
-}
-
-.name-example-content ul {
-    font-size: 1rem;
-    padding-left: 18px;
-}
-
-.detail3-CTA-section {
-    padding: 40px 20px;
-}
-
-.detail3-CTA-section .CTA-button {
-    font-size: 1rem;
-    text-align: center;
-    max-width: 100%;
-    box-sizing: border-box;
-}
-
-}
-
-
-/*======= DetailPage4============*/
-
-/*======= DetailPage4 Hero ============*/
-
-.detail4-hero{
+.detail4-hero {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 3rem;
@@ -1292,7 +1290,7 @@ td span {
     height: 550px;
 }
 
-.detail4-hero-title{
+.detail4-hero-title {
     transform: translateY(-60px);
 
 }
@@ -1301,13 +1299,13 @@ td span {
     transform: translateY(-30px);
 }
 
-.detail4-hero-title{
+.detail4-hero-title {
     justify-self: end;
     width: 100%;
     max-width: 500px;
 }
 
-.detail4-hero-title h1{
+.detail4-hero-title h1 {
     text-align: center;
 }
 
@@ -1315,7 +1313,7 @@ td span {
     text-align: left;
 }
 
-.detail4-hero-title span{
+.detail4-hero-title span {
     display: block;
 }
 
@@ -1326,7 +1324,7 @@ td span {
     margin: 0;
 }
 
-.detail4-hero img{
+.detail4-hero img {
     width: 100%;
     height: 100%;
     max-height: 400px;
@@ -1335,7 +1333,7 @@ td span {
 }
 
 
-/*======= DetailPage4 Name examples ============*/
+/*----------- DetailPage4 Name examples --------------*/
 
 
 .name-examples-section {
@@ -1350,7 +1348,7 @@ td span {
     font-size: 1.6rem;
 }
 
-.name-column{
+.name-column {
     width: 11%;
 }
 
@@ -1385,12 +1383,12 @@ td span {
 .bea-katakana,
 .bea-kanji,
 .ellen-katakana,
-.ellen-kanji{
+.ellen-kanji {
     font-family: "Yuji Syuku", serif;
 }
 
 
-/*======= DetailPage4 A case ============*/
+/*------------- DetailPage4 A case ---------------*/
 
 .case-section {
     display: grid;
@@ -1427,83 +1425,92 @@ td span {
     display: none;
 }
 
-@media (max-width: 768px){
+@media (max-width: 768px) {
 
-.detail4-hero {
-    grid-template-columns: 1fr;
-    height: auto;
-    padding: 40px 30px;
-    gap: 2rem;
+    .detail4-hero {
+        grid-template-columns: 1fr;
+        height: auto;
+        padding: 40px 30px;
+        gap: 2rem;
+    }
+
+    .detail4-hero-title,
+    .detail4-hero-figure {
+        transform: none;
+        width: 100%;
+        margin: 0;
+    }
+
+    .detail4-hero-title {
+        justify-self: center;
+        box-sizing: border-box;
+    }
+
+    .detail4-hero-title h1 {
+        text-align: center;
+    }
+
+    .detail4-hero img {
+        width: 100%;
+        height: auto;
+    }
+
+    .name-examples-section {
+        padding: 50px 25px;
+    }
+
+    .table-scroll {
+        overflow-x: auto;
+    }
+
+    .name-examples-table {
+        min-width: 700px;
+        font-size: 1rem;
+    }
+
+    .name-examples-table th,
+    .name-examples-table td {
+        padding: 12px;
+    }
+
+
+
+    .case-section {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: 50px 25px;
+    }
+
+    .case-text {
+        transform: none;
+        width: 100%;
+    }
+
+    .case-figure {
+        width: 100%;
+        margin: 0;
+    }
 }
 
-.detail4-hero-title,
-.detail4-hero-figure {
-    transform: none;
-    width: 100%;
-    margin: 0;
-}
-
-.detail4-hero img {
-    width: 100%;
-    height: auto;
-}
-
-.name-examples-section {
-    padding: 50px 25px;
-}
-
-.table-scroll{
-    overflow-x: auto;
-}
-
-.name-examples-table {
-    min-width: 700px;
-    font-size: 1rem;
-}
-
-.name-examples-table th,
-.name-examples-table td {
-    padding: 12px;
-}
-
-
-
-.case-section {
-    grid-template-columns: 1fr;
-    gap: 2rem;
-    padding: 50px 25px;
-}
-
-.case-text {
-    transform: none;
-    width: 100%;
-}
-
-.case-figure {
-    width: 100%;
-    margin: 0;
-}
-}
 
 
 
 
 
 
-
-/*======= Contact Page============*/
-
-
-/*======= Contact Page Hero ============*/
+/*-------------- Contact Page----------------*/
 
 
-.contact-hero{
+/*------------ Contact Page Hero -----------------*/
+
+
+.contact-hero {
     position: relative;
     height: 550px;
     padding: 0%;
 }
 
-.contact-hero > img {
+.contact-hero>img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -1517,10 +1524,10 @@ td span {
     background-color: #F5F1E8;
 }
 
-/*======= Contact Page contact section ============*/
+/*----------- Contact Page contact section ---------------*/
 
 
-/* =========== Contact Section =========== */
+/* ------------ Contact Section ---------------- */
 
 
 .contact-section {
@@ -1533,11 +1540,11 @@ td span {
     max-width: 500px;
 }
 
-.contact-info h2{
+.contact-info h2 {
     font-size: 2em;
 }
 
-.contact-info section{
+.contact-info section {
     padding-bottom: 10px;
 }
 
@@ -1552,7 +1559,7 @@ td span {
 }
 
 
-/* =========== Contact Form =========== */
+/* ----------- Contact Form -------------- */
 
 .contact-form-section {
     background-color: #F5F1E8;
@@ -1566,11 +1573,11 @@ td span {
     margin-bottom: 10px;
 }
 
-.contact-form-section > p {
+.contact-form-section>p {
     font-size: 1rem;
     line-height: 1.5;
     margin-bottom: 30px;
-    
+
 }
 
 .contact-form-section form {
@@ -1580,7 +1587,7 @@ td span {
 }
 
 
-/* Title radio buttons */
+/* --------- Title radio buttons ------------ */
 
 .contact-form-section fieldset {
     border: none;
@@ -1597,7 +1604,7 @@ td span {
 }
 
 
-/* Text input fields */
+/* ---------- Text input fields ------------ */
 
 .contact-form-section input[type="text"],
 .contact-form-section input[type="email"],
@@ -1610,14 +1617,14 @@ td span {
 }
 
 
-/* Message box */
+/* ----------- Message box --------------*/
 
 .contact-form-section textarea {
     height: 120px;
 }
 
 
-/* Submit button */
+/* -----------Submit button ------------*/
 
 .contact-form-section input[type="submit"] {
     width: 100%;
@@ -1634,7 +1641,7 @@ td span {
 }
 
 
-/* Small text */
+/* ------------Small text ---------------*/
 
 .privacy-text,
 .confirmation-text {
@@ -1647,7 +1654,7 @@ td span {
 
 
 
-/* =========== Welcome Section =========== */
+/* ----------- Welcome Section ------------ */
 
 .welcome-section {
     display: grid;
@@ -1680,7 +1687,7 @@ td span {
     text-align: center;
 }
 
-.shop img{
+.shop img {
     object-position: center -1%;
 }
 
@@ -1688,104 +1695,93 @@ td span {
 
 
 
-/* ===== Contact Page Mobile ===== */
+/* -------- Contact Page Mobile ---------- */
 
 @media (max-width: 768px) {
 
 
-.contact-hero {
-    height: 220px;
-    padding: 0;
+    .contact-hero {
+        height: 220px;
+        padding: 0;
+    }
+
+    .contact-hero-title {
+        top: 50%;
+        left: 50%;
+        right: auto;
+        transform: translate(-50%, -50%);
+        padding: 10px 30px;
+        width: 65%;
+    }
+
+    .contact-hero-title h1 {
+        font-size: 2rem;
+    }
+
+
+    .contact-section {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: 40px 25px;
+    }
+
+    .contact-info {
+        width: 100%;
+    }
+
+    .contact-info h2 {
+        font-size: 1.3rem;
+    }
+
+    .map-figure {
+        width: 100%;
+        margin: 0;
+    }
+
+
+    .contact-form-section {
+        padding: 25px 20px;
+        max-height: none;
+        transform: none;
+    }
+
+    .contact-form-section h2 {
+        font-size: 1.5rem;
+    }
+
+
+    .welcome-section {
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        padding: 40px 20px;
+    }
+
+    .welcome-text {
+        grid-column: 1 / 3;
+        font-size: 1rem;
+        padding: 0;
+    }
+
+    .welcome-text h2 {
+        font-size: 1.5rem;
+    }
+
+    .welcome-section figure {
+        margin: 0;
+    }
+
+    .welcome-section img {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+    }
+
+    .welcome-section figcaption {
+        font-size: 0.8rem;
+    }
+
+    .owner img {
+        object-position: center;
+    }
+
 }
-
-.contact-hero-title {
-    top: 50%;
-    left: 50%;
-    right: auto;
-    transform: translate(-50%, -50%);
-    padding: 10px 30px;
-    width: 65%;
-}
-
-.contact-hero-title h1 {
-    font-size: 2rem;
-}
-
-
-.contact-section {
-    grid-template-columns: 1fr;
-    gap: 2rem;
-    padding: 40px 25px;
-}
-
-.contact-info {
-    width: 100%;
-}
-
-.contact-info h2 {
-    font-size: 1.3rem;
-}
-
-.map-figure {
-    width: 100%;
-    margin: 0;
-}
-
-
-.contact-form-section {
-    padding: 25px 20px;
-    max-height: none;
-    transform: none;
-}
-
-.contact-form-section h2 {
-    font-size: 1.5rem;
-}
-
-
-.welcome-section {
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-    padding: 40px 20px;
-}
-
-.welcome-text {
-    grid-column: 1 / 3;
-    font-size: 1rem;
-    padding: 0;
-}
-
-.welcome-text h2 {
-    font-size: 1.5rem;
-}
-
-.welcome-section figure {
-    margin: 0;
-}
-
-.welcome-section img {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-}
-
-.welcome-section figcaption {
-    font-size: 0.8rem;
-}
-
-.owner img{
-    object-position: center ;
-
-}
-
-}
-
-
-
-
-
-
-
-
-
-
